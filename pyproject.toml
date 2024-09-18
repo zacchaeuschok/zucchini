@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "zucchini"
+version = "0.1.0"
+description = "A lightweight, Celery-like task queue for local development and trialing."
+authors = ["zacchaeus <zacchaeuschok2014@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+setuptools = "^75.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+
+[tool.poetry.scripts]
+zucchini-example = "examples.example:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
